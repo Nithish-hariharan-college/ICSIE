@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="str.css" />
+    <title>ICSIE'25 - National Conference</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16" />
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 via-blue-900 to-black text-white min-h-screen font-sans">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-opacity-90 bg-gray-800 shadow-lg z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <img src="k.png" alt="Logo" class="w-16 h-16 transition-transform transform hover:scale-110" />
+            <div class="hidden md:flex space-x-8 text-lg font-semibold">
+                <a href="h1.html" class="nav-link">Home</a>
+                <a href="h2.html" class="nav-link">About KAHE</a>
+                <a href="h3.html" class="nav-link">About ICSIE'25</a>
+                <a href="h4.html" class="nav-link">Call for Paper</a>
+                <a href="h5.html" class="nav-link">Submission Guidelines</a>
+                <a href="h6.html" class="nav-link">Registration</a>
+                <a href="h7.html" class="nav-link">Contact</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 bg-opacity-95">
+            <div class="flex flex-col items-center space-y-4 py-6 text-lg font-semibold">
+                <a href="h1.html" class="nav-link">Home</a>
+                <a href="h2.html" class="nav-link">About KAHE</a>
+                <a href="h3.html" class="nav-link">About ICSIE'25</a>
+                <a href="h4.html" class="nav-link">Call for Paper</a>
+                <a href="h5.html" class="nav-link">Submission Guidelines</a>
+                <a href="h6.html" class="nav-link">Registration</a>
+                <a href="h7.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br>
+    <section class="relative h-96 flex items-center justify-center bg-cover bg-center"
+        style="background-image: url('1.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <h1 class="relative z-10 text-4xl md:text-5xl font-bold text-yellow-400 animate-fade-in">About Karpagam Academy
+            of
+            Higher Education</h1>
+    </section>
+    <div class="container mx-auto px-6 py-12">
+        <div class="glass p-8">
+            <p class="text-lg text-justify leading-relaxed">Karpagam Academy of Higher Education (KAHE), the name
+                tantamount for quality education established under Section 3 of the UGC Act, 1956, is approved by the
+                Ministry of Human Resource Development, Government of India. The president of Karpagam Charity Trust
+                (KCT), Dr. R. Vasanthakumar, is a philanthropist, entrepreneur, industrialist, and culture promoter.
+                Karpagam has long been known for its cutting-edge facilities, innovative teaching methods,
+                career-focused training, immense placements, and top-notch professors. In addition to technical
+                proficiency, KAHE has distinguished itself from its inception by fostering soft skills such as
+                communication and teamwork, ensuring enlightening knowledge, expanding holistic education, and
+                establishing a strong value system. Today, with the strength of 6500 students and over 750 teaching &
+                non-teaching staff, Karpagam Academy of Higher Education is setting new benchmarks in the educational
+                sphere. Faculty members have a good number of research projects with the financial support of Rs. 11.2
+                Crore from various funding agencies like DBT/DST/CSIR/ICMR. Our Institute has filed more than 95 Patents
+                and copyrights. Further, 49 patents were granted by the Indian Patent Office and one US patent. Our
+                faculty have published as many as 3078 Research articles in Web of Science, Scopus, and Peer Reviewed
+                Journals. The Institute has collaborated with foreign Universities, Industries, and Research bodies for
+                mutual benefit. The Institute ensures that education epitomizes excellence in every sphere and that
+                students are equipped to meet the challenges of the present and emerge as the leaders of tomorrow.</p>
+        </div>
+    </div>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

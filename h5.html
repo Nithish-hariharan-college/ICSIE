@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="str.css" />
+    <title>ICSIE'25 - National Conference</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16" />
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-blue-900 to-black text-white min-h-screen font-sans">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-opacity-90 bg-gray-800 shadow-lg z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <img src="k.png" alt="Logo" class="w-16 h-16 transition-transform transform hover:scale-110" />
+            <div class="hidden md:flex space-x-8 text-lg font-semibold">
+                <a href="h1.html" class="nav-link">Home</a>
+                <a href="h2.html" class="nav-link">About KAHE</a>
+                <a href="h3.html" class="nav-link">About ICSIE'25</a>
+                <a href="h4.html" class="nav-link">Call for Paper</a>
+                <a href="h5.html" class="nav-link">Submission Guidelines</a>
+                <a href="h6.html" class="nav-link">Registration</a>
+                <a href="h7.html" class="nav-link">Contact</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 bg-opacity-95">
+            <div class="flex flex-col items-center space-y-4 py-6 text-lg font-semibold">
+                <a href="h1.html" class="nav-link">Home</a>
+                <a href="h2.html" class="nav-link">About KAHE</a>
+                <a href="h3.html" class="nav-link">About ICSIE'25</a>
+                <a href="h4.html" class="nav-link">Call for Paper</a>
+                <a href="h5.html" class="nav-link">Submission Guidelines</a>
+                <a href="h6.html" class="nav-link">Registration</a>
+                <a href="h7.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Submission Guidelines Section -->
+    <section class="container mx-auto px-6 py-20 mt-20">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-yellow-400 text-center mb-12 animate-fade-in">Submission Guidelines</h1>
+        
+        <div class="glass p-8 rounded-lg shadow-xl">
+            <p class="text-lg mb-6 leading-relaxed">
+                Prospective contributors are invited to submit full papers in <strong>DOC</strong> or <strong>DOCX</strong> format, spanning <strong>6-8 pages</strong> in double-column layout, including all figures, tables, and references. Submissions should be sent to Karpagam Academy of Higher Education at <a href="mailto:icsie@kahedu.edu.in" class="text-yellow-400 hover:underline">icsie@kahedu.edu.in</a>.
+            </p>
+            <p class="text-lg mb-6 leading-relaxed">
+                By submitting a paper, authors agree that, if accepted, they will provide a <strong>camera-ready version</strong> of the updated paper for inclusion in the final conference proceedings and present it at the conference.
+            </p>
+            <p class="text-lg mb-6 leading-relaxed">
+                At least one author of each accepted paper must register for the conference by the time the camera-ready article is submitted.
+            </p>
+            <p class="text-lg mb-6 leading-relaxed">
+                Accepted papers will be scheduled for presentation in a regular technical session.
+            </p>
+            
+            <h2 class="text-2xl md:text-3xl font-bold text-yellow-400 mb-6">Possible Plagiarism Scenarios</h2>
+            <ul class="space-y-4 list-none">
+                <li class="flex items-start glass p-4 hover:bg-gray-700 transition-all duration-300">
+                    <svg class="w-6 h-6 mr-3 text-yellow-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Ensure the <strong>Similarity Index (Plagiarism Report)</strong> is less than <strong>30%</strong>.</span>
+                </li>
+                <li class="flex items-start glass p-4 hover:bg-gray-700 transition-all duration-300">
+                    <svg class="w-6 h-6 mr-3 text-yellow-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Maintain a minimum of <strong>15 references</strong> in the paper.</span>
+                </li>
+                <li class="flex items-start glass p-4 hover:bg-gray-700 transition-all duration-300">
+                    <svg class="w-6 h-6 mr-3 text-yellow-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Do not include salutations like <strong>“Dr./Mr./Mrs./Prof./Research Scholar/Student”</strong> in the author details section.</span>
+                </li>
+                <li class="flex items-start glass p-4 hover:bg-gray-700 transition-all duration-300">
+                    <svg class="w-6 h-6 mr-3 text-yellow-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Mention <strong>affiliations</strong> and <strong>email IDs</strong> of all authors.</span>
+                </li>
+                <li class="flex items-start glass p-4 hover:bg-gray-700 transition-all duration-300">
+                    <svg class="w-6 h-6 mr-3 text-yellow-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Run a <strong>spellcheck</strong> and proofread thoroughly to eliminate typos and grammatical errors.</span>
+                </li>
+                <li class="flex items-start glass p-4 hover:bg-gray-700 transition-all duration-300">
+                    <svg class="w-6 h-6 mr-3 text-yellow-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Use high-quality <strong>figures/graphics</strong>.</span>
+                </li>
+                <li class="flex items-start glass p-4 hover:bg-gray-700 transition-all duration-300">
+                    <svg class="w-6 h-6 mr-3 text-yellow-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span><strong>Tables</strong> and <strong>equations</strong> must be in text format, not as images.</span>
+                </li>
+                <li class="flex items-start glass p-4 hover:bg-gray-700 transition-all duration-300">
+                    <svg class="w-6 h-6 mr-3 text-yellow-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Include in-text descriptions and callouts for all <strong>figure numbers, table numbers, and equation numbers</strong> in order of appearance.</span>
+                </li>
+                <li class="flex items-start glass p-4 hover:bg-gray-700 transition-all duration-300">
+                    <svg class="w-6 h-6 mr-3 text-yellow-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Cite all references within the paper using <strong>in-text citations</strong> in ascending order.</span>
+                </li>
+                <li class="flex items-start glass p-4 hover:bg-gray-700 transition-all duration-300">
+                    <svg class="w-6 h-6 mr-3 text-yellow-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Avoid citing references in the <strong>Abstract</strong> and <strong>Conclusion</strong> sections.</span>
+                </li>
+                <li class="flex items-start glass p-4 hover:bg-gray-700 transition-all duration-300">
+                    <svg class="w-6 h-6 mr-3 text-yellow-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Remove personal pronouns like <strong>“Our/We/Us”</strong> from the paper.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6 text-center">
+        <p class="text-sm">© 2025 ICSIE - Karpagam Academy of Higher Education. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

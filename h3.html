@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="str.css" />
+    <title>ICSIE'25 - National Conference</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16" />
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-blue-900 to-black text-white min-h-screen font-sans">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-opacity-90 bg-gray-800 shadow-lg z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <img src="k.png" alt="Logo" class="w-16 h-16 transition-transform transform hover:scale-110" />
+            <div class="hidden md:flex space-x-8 text-lg font-semibold">
+                <a href="h1.html" class="nav-link">Home</a>
+                <a href="h2.html" class="nav-link">About KAHE</a>
+                <a href="h3.html" class="nav-link">About ICSIE'25</a>
+                <a href="h4.html" class="nav-link">Call for Paper</a>
+                <a href="h5.html" class="nav-link">Submission Guidelines</a>
+                <a href="h6.html" class="nav-link">Registration</a>
+                <a href="h7.html" class="nav-link">Contact</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 bg-opacity-95">
+            <div class="flex flex-col items-center space-y-4 py-6 text-lg font-semibold">
+                <a href="h1.html" class="nav-link">Home</a>
+                <a href="h2.html" class="nav-link">About KAHE</a>
+                <a href="h3.html" class="nav-link">About ICSIE'25</a>
+                <a href="h4.html" class="nav-link">Call for Paper</a>
+                <a href="h5.html" class="nav-link">Submission Guidelines</a>
+                <a href="h6.html" class="nav-link">Registration</a>
+                <a href="h7.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br><br><br>
+
+<div class="container mx-auto px-6 py-12">
+    <h3 class="text-3xl font-extrabold text-yellow-400 mb-6 animate-fade-in">About Conference</h3>
+    <div class="glass p-8 shadow-xl transform hover:scale-105 transition-all duration-300">
+        <p class="text-lg text-justify">As cyber threats become more sophisticated, continuous innovation in cybersecurity is essential to safeguarding digital ecosystems. This conference explores cutting-edge advancements in cybersecurity, including artificial intelligence (AI)-driven threat detection, Zero Trust Architecture (ZTA), blockchain for secure transactions, and quantum cryptography for future-proof encryption. AI and machine learning have revolutionized cybersecurity by enabling real-time anomaly detection and automated threat response. The conference will discourse the latest technological innovations, industry best practices, and future trends in cybersecurity, offering insights into how organizations, individuals, and governments can stay ahead in the ever-evolving digital landscape. Education, Coimbatore.</p>
+    </div>
+</div>
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+</body>
+</html>
